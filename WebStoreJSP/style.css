@@ -1,0 +1,312 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    
+}
+body{
+    font-family: 'Playfair Display', serif;
+}
+nav{
+    flex:1; /*grow factor, scale factor*/
+    text-align: right;
+}
+
+nav ul li{
+    display:inline-block;
+    margin-right:20px;
+}
+.background-img{
+    background-image: url("images/luxury-background.jpg");
+}
+
+a{
+    text-decoration:none;
+    color: white ; /* link color */
+
+}
+p{
+    color:#555;
+}
+.container{
+    max-width:1080px;
+    margin:auto;
+    padding-left: 25px; /*so doesn't go to the edge of the webpage*/
+    padding-right:25px; /*so doesn't go to the edge of the webpage*/
+}
+.row{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis:50%;
+    min-width:300px;
+
+}
+
+.col-2 img{
+    max-width:100%;
+    padding:50px 0; /*50px from top and bottom, 0 left and right */
+}
+
+.col-2 h1{ 
+    font-size:50px;
+    line-height:60px;
+    margin:25px 0;
+    color:white;
+}
+.btn{
+    display:inline-block;
+    background: #ff523b;
+    color:#fff;
+    padding: 8px 30px;
+    margin:30px 0;
+    border-radius:30px;
+    transition: background 0.3s;
+}
+.header{
+    background: radial-gradient(#a0a0a0, #414141);
+}
+.header .row{
+    margin-top: 70px;
+    margin-left:70px;
+}
+
+.btn:hover{
+    background: #563434;
+}
+.categories{
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis:30%; /*occupies 30 percent of space, 3 images in a row */
+    min-width:250px;
+    margin-bottom:30px;
+}
+.col-3 img{
+    width:300px;
+    height: 400px;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto; /*center*/
+    padding-left: 25px;
+    padding-right: 25px;
+} 
+.col-4{
+    flex-basis:25%;
+    padding:10px;
+    min-width:200px;
+    margin-bottom:50px;
+    transition: transform 0.5s;
+}
+.logo{
+    background: transparent;
+}
+
+
+.col-4 img{
+    width:100%;
+}
+
+.title{
+    text-align:center;
+    margin:0 auto 80px;
+    position:relative;
+    line-height: 60px;
+    color:  #555;
+
+}
+
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+h4{
+    color: #555;
+    font-weight: normal;
+}
+.col-4 p{ 
+    font-size: 14px;
+}
+
+.rating fa{
+    color: #ff523b;
+}
+
+.col-4:hover{
+    transform: translateY(-5px);
+}
+.header2{
+    background: rgb(117, 117, 117);
+}
+
+.search{
+    margin-left:25px;
+}
+.navbar input[type=text] {
+    float: right;
+    padding: 6px;
+    border-radius: 25px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 24px;
+    align-self: stretch;
+ }
+.login {
+    height: 300px;
+    border-radius: 50px;
+    
+    background:rgb(117, 117, 117);
+    text-align: center;
+   
+    padding-top:80px;
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 450px;
+    margin-right:600px;
+    margin-bottom: 50px;
+
+}
+
+.container2 input{
+    align-self: auto;
+}
+.login button{
+    margin-top:10px;
+    width:50px;
+    height:30px;
+    border-radius:30px;
+}
+.productsHeader{
+    align-content: space-between;
+}
+.productsPageTitle{
+    display: inline-block;
+    width:50%;
+}
+.sortBy{
+    display: inline-block;
+    float-right: right;
+}
+.productsPageTitle{
+    margin-left:10px;
+}
+.orders{
+  margin-top:40px;
+}
+.orders img{
+    
+        width: 80px; /* you can use % */
+        height: auto;
+    
+}
+.orderContainer{
+    display:flex;
+    background-color: rgb(118, 118, 118);
+    align-items: right;
+    gap: 10px;
+    border-radius:20px;
+    max-width: 100%;
+    align-items:center;
+}
+.orderList{
+    max-width: 100%;
+}
+.ordersTitle{
+    max-width: 100%;
+}
+.left-container{
+    width: 50%;
+    flex-shrink:0;
+}
+.right-container{
+    width: 50%;
+    margin-left: 10%; 
+    margin-right: 0;
+}
+.small-container-2{
+    display:flex;
+    max-width: 1080px;
+    margin: auto; /*center*/
+    padding-left: 25px;
+    padding-right: 25px;
+} 
+
+.imgPanel{
+    width: 10%;
+}
+
+.productSite{
+    display:flex;
+    margin-top:30px;
+}
+
+.product-img{
+    width:50px; /* you can use % */
+    height: auto;
+}
+
+.mainImage{
+    width: 900px;
+    height:auto;
+}
+
+.mainImage img{
+    width:100%;
+    height:auto;
+}
+
+.product-info{
+    margin-left:50px;
+}
+.selectionPanel{
+    padding-left:50px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom:10px;
+    margin-left:10px;
+   
+}
+select{
+    margin-left:10px;
+}
+.coupon{
+    background-color: grey;
+    border-radius: 5px;
+    width: 300px;
+    padding-top: 5px;
+    padding-bottom:5px;
+    padding-left:5px;
+}
+
+.newAccountPanel{
+    height:auto;
+    border-radius: 50px;
+    
+    background:rgb(117, 117, 117);
+    text-align: center;
+   
+    padding-top:20px;
+    width: 400px;
+    margin-top: 50px;
+    margin-left: 450px;
+    margin-right:600px;
+    margin-bottom: 50px;
+
+}
